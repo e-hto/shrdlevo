@@ -1,70 +1,29 @@
-function randomIntFromInterval(min,max){  // Returns a random integer from the given range
-    return Math.floor(Math.random()*(max-min+1)+min);  
+function randomIntFromInterval(min,max){
+    return Math.floor(Math.random()*(max-min+1)+min);
 }
 
 function randomTokensForWords(){
 	var posible_tokens=[];
-	//var englishWords = ["to","wake","woke","kana","take","toke","tote","tutu","tuba","tuna","bake","bate","bani","bike","bite","bubo","banana","bonito","katakana"];
-	
-	//(tokens variable comes from the file tokens.txt)
-	if(tokens.indexOf(",")!= -1){ // If tokens contains a ','
-		tokens = tokens.split(","); // tokens is now  an array
+	if(tokens.indexOf(",")!= -1){
+		tokens = tokens.split(",");
+	}
+	for(var i=0;i<tokens.length;i++){
+		posible_tokens.push(i.toString());
 	}
 	
-	//choose 5 tokens at random to make up the language
-	
-	var index1 = randomIntFromInterval(1,20);
-	var index2 = randomIntFromInterval(1,20);
-	var index3 = randomIntFromInterval(1,20);
-	var index4 = randomIntFromInterval(1,20);
-	var index5 = randomIntFromInterval(1,20);
-	
-		//CHANGE THIS TO PULL FROM ONLY 5 TOKENS!!!  VVV 
-		//Instead of the for loop, randomly choose 5 numbers < tokens.length
-	
-		posible_tokens.push(index1.toString()); // Put the token's index i into posible_tokens
-		posible_tokens.push(index2.toString());
-		posible_tokens.push(index3.toString());
-		posible_tokens.push(index4.toString());
-		posible_tokens.push(index5.toString());
-	
-	//words variable comes from the file words.json
-	// words[0] is always " " (space)
-	for(var i=1;i<words.length;i++){ // For every word from words.json (after space)	
-		new_tokens = ""; //new_tokens is a string
+	for(var i=1;i<words.length;i++){		
+		new_tokens = "";
 		
-		num_tokens = words[i].token.split(',').length; // The number of tokens to create this word
-		for(var j=0;j<num_tokens;j++){ // For every token in the word
-			if(new_tokens!="")new_tokens+=","; //Adds a , between every token
-			index = randomIntFromInterval(1,posible_tokens.length-1); // Chooses an index from posible_tokens at random	 	
+		num_tokens = words[i].token.split(',').length;
+		for(var j=0;j<num_tokens;j++){
+			if(new_tokens!="")new_tokens+=",";
+			index = randomIntFromInterval(1,posible_tokens.length-1);		
 			new_tokens += posible_tokens[index];
-			posible_tokens.splice(index, 1); //Removes the allocated token from the pool of posible_tokens			
+			posible_tokens.splice(index, 1);			
 		}	
-		
-		//var englishWord = false;
-		
-		//for ( var i=0; i < englishWords.length; i++) {
-		
-		//if ( new_tokens == englishWords[i] ){
-		
-		//englishWord = true;	
-			
-		//}
-		//}	
-			
-		
-		//if ( englishWord = false ){
-		
+
 		words[i].token = new_tokens;
-			
-		//} else {
-		
-		//randomTokensForWords();	
-			
-		//}
-		
-	}
-		
+	}	
 }
 
 function loadTranslations(){		
