@@ -17,9 +17,9 @@ function randomTokensForWords(){
 		num_tokens = words[i].token.split(',').length;
 		for(var j=0;j<num_tokens;j++){
 			if(new_tokens!="")new_tokens+=",";
-			index = randomIntFromInterval(1,posible_tokens.length-1);		
+			index = randomIntFromInterval(1,5);		
 			new_tokens += posible_tokens[index];
-			posible_tokens.splice(index, 1);			
+			//posible_tokens.splice(index, 1);			
 		}	
 
 		words[i].token = new_tokens;
