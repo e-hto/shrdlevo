@@ -4,11 +4,11 @@
 		{"i":"0","blocks":"1","before":"0","after":["1"],"instruction":"add blue"},
 		{"i":"1","blocks":"1","before":"00","after":["01","10"],"instruction":"add blue"},
 		{"i":"2","blocks":"1","before":"01","after":["11","10_10","01_01"],"instruction":"add blue"},
-		{"i":"2","blocks":"11","before":"00","after":["11","01_01","10_10"],"instruction":"add blue add blue"},
+		{"i":"2","blocks":"11","before":"00","after":["11","01_01","10_10"],"instruction":"add blue blue"},
 		{"i":"3","blocks":"2","before":"0","after":["2"],"instruction":"add orange"},
 		{"i":"4","blocks":"2","before":"00","after":["02","20"],"instruction":"add orange"},
 		{"i":"5","blocks":"2","before":"20","after":["22","20_20","02_02"],"instruction":"add orange"},
-		{"i":"6","blocks":"22","before":"00","after":["22","02_02","20_20"],"instruction":"add orange add orange"},
+		{"i":"6","blocks":"22","before":"00","after":["22","02_02","20_20"],"instruction":"add orange orange"},
 		
 		{"i":"7","blocks":"12","before":"000","after":["001","010","100"],"instruction":"add blue"},
 		{"i":"8","blocks":"12","before":"000","after":["002","020","200"],"instruction":"add orange"},
