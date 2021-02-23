@@ -3,20 +3,21 @@
 	"conf":[	
 		{"i":"0","blocks":"1","before":"0","after":["1"],"instruction":"add blue"},
 		{"i":"1","blocks":"1","before":"00","after":["01","10"],"instruction":"add blue"},
-		{"i":"2","blocks":"1","before":"01","after":["11","10_10","01_01"],"instruction":"add blue"},
+		{"i":"2","blocks":"12","before":"01","after":["11","10_10","01_01"],"instruction":"add blue"},
 		{"i":"2","blocks":"11","before":"00","after":["11","01_01","10_10"],"instruction":"add blue blue"},
 		{"i":"2","blocks":"11","before":"001","after":["111","110_100","011_010","011_001","101_100","101_001","001_001_001"],"instruction":"add blue blue"},
 		{"i":"3","blocks":"2","before":"0","after":["2"],"instruction":"add orange"},
 		{"i":"4","blocks":"2","before":"00","after":["02","20"],"instruction":"add orange"},
-		{"i":"5","blocks":"2","before":"20","after":["22","20_20","02_02"],"instruction":"add orange"},
+		{"i":"5","blocks":"52","before":"20","after":["22","20_20","02_02"],"instruction":"add orange"},
 		{"i":"6","blocks":"22","before":"00","after":["22","02_02","20_20"],"instruction":"add orange orange"},
-		{"i":"7","blocks":"22","before":"020","after":["222","220_200","220_020","022_020","022_002","020_020_020"],"instruction":"add orange orange"},
-		
-		{"i":"7","blocks":"12","before":"000","after":["001","010","100"],"instruction":"add blue"},
-		{"i":"8","blocks":"12","before":"000","after":["002","020","200"],"instruction":"add orange"},
+		{"i":"7","blocks":"224","before":"020","after":["222","220_200","220_020","022_020","022_002","020_020_020"],"instruction":"add orange orange"},
 		
 		{"i":"9","blocks":"12","before":"000","after":["012","021","102","120","201","210", "100_200","010_020","001_002", "200_100", "020_010","002_001"], "instruction":"add orange blue"},
 		{"i":"10","blocks":"1122","before":"000","after":["221","212","122","220_100","220_010","120_200","120_020","012_020","021_020","022_010","022_001","202_100","202_001","101_200","101_002","102_200","201_200","201_002","200_200_100","020_020_010","002_002_001","100_200_200","010_020_020","001_002_002","200_100_200","020_010_020","002_001_002"],"instruction":"add orange orange blue"},
+		
+		{"i":"18","blocks":"214","before":"000","after":["214","241","142","124","210_400","210_040","240_100","240_010","201_400","204_100",,"201_004","201_400","200_400_100","200_100_400","104_002","102_004","140_020","140_200","120_040","120_400","100_200_400","100_400_200","420_100","410_200","420_010","410_020","402_100","402_010","401_200","401_020","400_100_200","400_200_100"],"instruction":"add all"},
+
+		{"i":"19","blocks":"","before":"215","after":["000",],"instruction":"remove all"},
 		
 		{"i":"11","blocks":"","before":"01","after":["00"],"instruction":"remove blue"},
 		{"i":"12","blocks":"","before":"2","after":["0"],"instruction":"remove orange"},
