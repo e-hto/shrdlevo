@@ -21,5 +21,5 @@ var wordsFile = "json/words.json";
 var urlLocal = "https://e-hto.github.io/shrdlevo/"; 
 var urlData = "https://somata.inf.ed.ac.uk/shrdlevo/getData";
 
-var experimentVersion = "shrdlevo";
+var experimentVersion = "shrdlevo_0.0.0";
 
