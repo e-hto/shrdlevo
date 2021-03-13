@@ -1,6 +1,6 @@
 ////////////////////EVENTS/////////////////////////
 
-	///////////////////EVENTS Blocks///////////////////    
+	///////////////////EVENTS Blocks///////////////////      
     blocksCanvas.addEventListener('mousemove', function(e) {
 		if(block_actions==1){
 			e.target.style.cursor = 'not-allowed';
